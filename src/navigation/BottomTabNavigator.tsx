@@ -7,6 +7,7 @@ import useColorScheme from '../hooks/useColorScheme';
 import HomeScreen from '../screens/HomeScreen';
 import MarketScreen from '../screens/MarketScreen';
 import ProfileScreen from '../screens/ProfileScreen';
+import PortfolioScreen from '../screens/PorfolioScreen';
 import RankingsScreen from '../screens/RankingsScreen';
 import TabOneScreen from '../screens/TabOneScreen';
 import TabTwoScreen from '../screens/TabTwoScreen';
@@ -30,7 +31,7 @@ export default function BottomTabNavigator() {
       />
       <BottomTab.Screen
         name="Portfolio"
-        component={ProfileScreen}
+        component={PortfolioScreen}
         options={{
           tabBarIcon: ({ color }) => <AntDesign name="piechart" size={30} color={color} />,
         }}
